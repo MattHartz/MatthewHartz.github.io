@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
+<html>
+{% endif %}
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title }} - {% elsif post.title %}{{ post.title }} - {% endif %}{{ site.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+	<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css' type="text/css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo" type="text/css">
+	<link rel="stylesheet" href="/assets/css/Site.css" type="text/css">
+	<link rel="stylesheet" href="/assets/css/syntax.css" type="text/css">
+	<link href="/favicon.ico" rel="shortcut icon">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/assets/scripts/script.js"></script>
+</head>
